@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg py-3">
             <div class="container">
 
-                <a class="navbar-brand gold-color" href="#">EcoTour</a>
+                <a class="navbar-brand gold-color" href="./index.html">EcoTour</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -37,16 +37,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cities and Tours</a>
+                            <a class="nav-link" href="./search.html">Cities and Tours</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About </a>
+                            <a class="nav-link" href="./about.html">About </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact </a>
+                            <a class="nav-link" href="./about.html">Contact </a>
                         </li>
                         <li class="nav-item">
 
@@ -64,7 +64,7 @@
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
                         </button>
-                        <button class="btn btn-outline-warning gold-btn" type="submit">Sign Up</button>
+                        <a href="demo.html"><button class="btn btn-outline-warning gold-btn" type="submit">Sign Up</button></a>
                     </form>
                 </div>
             </div>
@@ -72,7 +72,7 @@
         <div class="container-fluid relative-box">
             <div class="container text-white  video-page-thumb">
                 <iframe width="420" height="315" id="video-page-video-size"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                src="https://drive.google.com/file/d/1cb2ZcHnqc4zq1S7Kw0MQz2SO4Xkmv_qQ/preview">
                 </iframe>
 
 
@@ -84,16 +84,45 @@
     <div class="container ">
         <div class="row d-flex justify-content-between my-5 mx-3">
             <h1 class="mulish">About</h1>
-            <h5><a href="">Previous</a></h5>
+            <h5><a href="./tour-detail.html">Previous</a></h5>
+            <h5><a href="./video-page2.html">Next</a></h5>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 border-radius-map mt-4">
+            <div class="col-lg-6 col-md-12 col-sm-12 border-radius-map mt-4">
                 <div class="map-responsive">
-                    <iframe
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
-                        width="100%" height="700px" frameborder="0" style="border:0" allowfullscreen id="map"></iframe>
+                    <div id="map" class="customSize"></div>
                 </div>
             </div>
+            
+            <script>
+                function initMap() {
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 59.405747989833664, lng: 18.351326119949828}, // Center the map on Vaxholm, Sweden
+                        zoom: 20, // Adjust the zoom level as needed
+                        mapTypeId: 'satellite' 
+                    });
+            
+                    // Define the locations for the markers
+                    var locations = [
+                        {title: 'Vaxholm Hembygdsgårds Museum', location: {lat: 59.405747989833664, lng:18.351326119949828}},
+                        {title: 'Vaxholm Hembygdsgårds Cafe', location: {lat: 59.405747989833664, lng:18.351326119949828}},
+                        {title: 'Vaxholm Church', location: {lat: 59.40353, lng: 18.34775}},
+                        {title: 'Vaxholm Rådhus', location: {lat: 59.40360, lng: 18.35139}},
+                        {title: 'Vaxholm Fortress', location: {lat: 59.40310, lng: 18.35916}}
+                    ];
+            
+                    // Add markers to the map for each location
+                    locations.forEach(function (item) {
+                        var marker = new google.maps.Marker({
+                            position: item.location,
+                            map: map,
+                            title: item.title
+                        });
+                    });
+                }
+            </script>
+            
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&callback=initMap" async defer></script>
         </div>
     </div>
 
@@ -101,23 +130,13 @@
         <div class="container mt-video-page-fixed-right">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12">
-                    <img src="Image Placeholder.png" class="img-resposnsive img-right-fixed">
+                    <img src="museum.jpg" class="img-resposnsive img-right-fixed">
                 </div>
                 <div class="col-lg-7 col-md-12 col-sm-12 clm-video-page-fixed-right-text">
                     <h2 class="mulish-font">About Vaxholm Hembygdsgårds museum</h2>
-                    <p class="mulish text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed
-                        pretium, egestas sed sit. Fames tincidunt rhoncus viverra eu ut scelerisque. Erat orci
-                        scelerisque adipiscing potenti sollicitudin semper aliquam in ultricies. Sem vitae amet, egestas
-                        aliquam mi a arcu.
-                        <br><br>
-                        Purus diam est vitae faucibus enim. Ultricies nunc vel magnis massa odio. Sed
-                        dictumst condimentum sit quis Lorem ipsum dolor sit egestas sed sit. Fames tincidunt rhoncus
-                        viverra eu ut sce scelerisque adipiscing potenti in ultricies. Sem vitae amet, egestas aliquam
-                        mi a arcu. Feugiat at dignissim massa ornare. Platea eu orci enim est egestas fusce cras.
-                        <br><br>
+                    <p class="mulish text-muted">The Vaxholm Hembygdsgårds Museum is a beloved cultural gem nestled within the picturesque archipelago city of Vaxholm, in Stockholm, Sweden. Established with an earnest desire to preserve the local history and cultural heritage, the museum is located in an enchanting setting, surrounded by the serenity of traditional Swedish architecture and lush gardens. Housed in a beautifully restored 18th-century building, the museum showcases a well-curated collection of artifacts, documents, and exhibits that reflect the city's fishing community history, local crafts, and the lifestyle of Vaxholm's women and children over the centuries. The museum offers visitors a guided tour with 200Kr fee for 5 to 10 people, which includes engaging explanation of historical household items and the beautiful waterside view.
 
-                        Purus diam est vitae faucibus enim. Ultricies nunc vel magnis gravida quis sodales. Lacus,
-                        elit pellentesque massa odio. Sed dictumst condimentum sit quis </p>
+                        For more information: <a href="https://www.hembygd.se/hembygdsbloggen/news/29905z" target="_blank">https://www.hembygd.se/hembygdsbloggen/news/29905z</a></p>
                 </div>
 
             </div>
@@ -128,23 +147,11 @@
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12 clm-video-page-fixed-left-text">
                     <h2 class="mulish-font">Nonprofit Information</h2>
-                    <p class="mulish text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed
-                        pretium, egestas sed sit. Fames tincidunt rhoncus viverra eu ut scelerisque. Erat orci
-                        scelerisque adipiscing potenti sollicitudin semper aliquam in ultricies. Sem vitae amet, egestas
-                        aliquam mi a arcu.
-                        <br><br>
-                         Purus diam est vitae faucibus enim. Ultricies nunc vel magnis massa odio. Sed
-                        dictumst condimentum sit quis Lorem ipsum dolor sit egestas sed sit. Fames tincidunt rhoncus
-                        viverra eu ut sce scelerisque adipiscing potenti in ultricies. Sem vitae amet, egestas aliquam
-                        mi a arcu. Feugiat at dignissim massa ornare. Platea eu orci enim est egestas fusce cras.
-                        <br><br>
-
-                          Purus diam est vitae faucibus enim. Ultricies nunc vel magnis gravida quis sodales. Lacus,
-                        elit pellentesque massa odio. Sed dictumst condimentum sit quis </p>
+                    <p class="mulish text-muted">This museum is part of the larger network of institutions supported by Sveriges Hembygdsförbund (the Swedish Local Heritage Federation). This national organization, established in 1916, encourages the work of local heritage societies across Sweden. Its mission involves the preservation and promotion of cultural heritage, local history, and traditional customs. By working together, Vaxholm Hembygdsgårds Museum and Sveriges Hembygdsförbund play a significant role in ensuring the enduring vitality of Swedish heritage, providing invaluable educational resources and experiences to both locals and international visitors.</p>
                 </div>
 
                 <div class="col-lg-5 col-md-12 col-sm-12">
-                    <img src="Image Placeholder.png" class="img-resposnsive img-left-fixed">
+                    <img src="sveriges.jpg" class="img-resposnsive img-left-fixed">
                 </div>
                 
             </div>
@@ -169,7 +176,7 @@
         <div class="container">
             <footer class="row  py-5 border-top">
                 <div class="col-lg-5 col-sm-12 mb-3 text-white ">
-                    <h1 class="lora-font mb-5">Signup for newzletter</h1>
+                    <h1 class="lora-font mb-5">Signup for newsletter</h1>
                     <p class="mulish-font bold mb-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisici dolor
                         sit amet,
                         consectetur ading elit.</p>

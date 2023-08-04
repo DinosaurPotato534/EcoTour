@@ -9,7 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
     <link rel="stylesheet" href="style.css">
     <title>EcoTour</title>
 
@@ -35,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./search.html">Cities and Tours</a>
@@ -62,125 +64,81 @@
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
                         </button>
-                        <a href="demo.html"><button class="btn btn-outline-warning gold-btn" type="submit">Sign Up</button></a>
+                        <button class="btn btn-outline-warning gold-btn" type="submit">Sign Up</button>
                     </form>
                 </div>
-
             </div>
         </nav>
-        <div class="container-fluid">
-            <div class="container text-white  bold py-5 container-center-page-4">
-                <h1 class="lora-font bolder">Discover More...</h1>
-                <p class=" text-light">Help spread the word for nonprofits and SDGs while enhancing your experiences</p>
+        <div class="container-fluid relative-box">
+            <div class="container text-white  video-page-thumb">
+                <img
+                    src="./church.jpg">
             </div>
+            <p class="mulish" style="color: white; text-align: center;">Photo by Torbjörn L</p>
+        </div>
+
         </div>
     </header>
-    <div class="container py-5">
-        <h1 class="mt-5 mb-5 mulish-font bold ">Popular</h1>
+    <div class="container ">
+        <div class="row d-flex justify-content-between my-5 mx-3">
+            <h1 class="mulish">About</h1>
+            <h5><a href="./video-page2.html">Previous</a></h5>
+            <h5><a href="./video-page4.html">Next</a></h5>
+        </div>
         <div class="row">
-            <div class="col-lg-6">
-                <a href="blog-post-1.html"><div class="card card-img-bg">
-                    <div class="card-footer bg-transparent">
-                        <!-- <h5 class="text-white">Non Profits in sweden part 1 : for those lookng for activities with
-                            families</h5> -->
-                    </div>
-                </div></a>
-            </div>
-            <div class="col-lg-5 mt-2 ml-2">
-                <div class="row d-flex post-flex mt-2"><a href="blog-post-3.html"><img src="blog-page-bg-1card.png" alt="" class=" profile-size">
-                        <div class="col flex-clm">
-                            <h4 class="lora-font bold post-flex-h4">Midsummer’s festival: A day
-                                in Rönninge village with
-                                Täby Hembygdsförening.</h4>
-                            <div class="buttom-links  mulish-font  text-muted text-light ">
-                                <a href="" class="mx-2 text-muted">Author:</a>
-                                <a href="" class="mx-2 text-muted">Intelgra</a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="row d-flex post-flex mt-2"><a href="demo.html"><img src="blog-page-bg-2card.png" alt="" class=" profile-size">
-
-                        <div class="col flex-clm">
-                            <h4 class="lora-font bold post-flex-h4">How do we help with SDGs?
-                                A guide to what we do and how you can be involved.</h4>
-                            <div class="buttom-links  mulish-font  text-muted text-light ">
-                                <a href="" class="mx-2 text-muted">Author:</a>
-                                <a href="" class="mx-2 text-muted">Intelgra</a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="row d-flex post-flex mt-2"><a href="blog-post-2.html"><img src="blog-page-bg-3card.png" alt="" class=" profile-size">
-
-                        <div class="col flex-clm">
-                            <h4 class="lora bold post-flex-h4">Summer activity: Kayak for a green cause and it is free!</h4>
-                            <div class="buttom-links  mulish-font  text-muted text-light ">
-                                <a href="" class="mx-2 text-muted">Author:</a>
-                                <a href="" class="mx-2 text-muted">Intelgra</a>
-                                
-                            </div>
-                        </div>
-                    </a>
+            <div class="col-lg-6 col-md-12 col-sm-12 border-radius-map mt-4">
+                <div class="map-responsive">
+                    <div id="map" class="customSize"></div>
                 </div>
             </div>
+            
+            <script>
+                function initMap() {
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 59.40353, lng: 18.34775}, // Center the map on Vaxholm, Sweden
+                        zoom: 20, // Adjust the zoom level as needed
+                        mapTypeId: 'satellite' 
+                    });
+            
+                    // Define the locations for the markers
+                    var locations = [
+                        {title: 'Vaxholm Hembygdsgårds Museum', location: {lat: 59.405747989833664, lng:18.351326119949828}},
+                        {title: 'Vaxholm Hembygdsgårds Cafe', location: {lat: 59.405747989833664, lng:18.351326119949828}},
+                        {title: 'Vaxholm Church', location: {lat: 59.40353, lng: 18.34775}},
+                        {title: 'Vaxholm Rådhus', location: {lat: 59.40360, lng: 18.35139}},
+                        {title: 'Vaxholm Fortress', location: {lat: 59.40310, lng: 18.35916}}
+                    ];
+            
+                    // Add markers to the map for each location
+                    locations.forEach(function (item) {
+                        var marker = new google.maps.Marker({
+                            position: item.location,
+                            map: map,
+                            title: item.title
+                        });
+                    });
+                }
+            </script>
+            
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&callback=initMap" async defer></script>
+        </div>
         </div>
     </div>
 
-    <div class="container my-5">
-
-        <h1 class="mulish-font  my-5">Latest Posts</h1>
-
-        <div class="row center-card">
-            <div class="col-lg-4 col-md-12 ">
-                <div class="card" style="width: 20rem;">
-                    <img src="skansen-lady.png" class="card-img-top" alt="...">
-                    <a href="blog-post-4.html"><div class="card-body">
-                        <h5 class="card-text mulish-font bold">
-
-                            Why Skansen is a must for cultural enthusiasts. No Swedish language required. 
-
-                        </h5>
-                        <div class="buttom-links mulish-font bold">
-                            Author:
-                            Intelgra
-                        </div>
-                    </div></a>
-
+    <div class="container-fluid relative mt-5 mb-5">
+        <div class="container mt-video-page-fixed-right">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <img src="church.png" class="img-resposnsive img-right-fixed">
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-12 ">
-                <div class="card" style="width: 20rem;">
-                    <img src="blog-page-card-2.png" class="card-img-top" alt="...">
-                    <a href="blog-post-1.html"><div class="card-body">
-                        <h5 class="card-text mulish-font bold">
-
-                            Nonprofits in Sweden Part 1: For those looking for activities with families.
-
-                        </h5>
-                        <div class="buttom-links mulish-font bold">
-                            Author:
-                            Intelgra
-                        </div>
-                    </div></a>
-
+                <div class="col-lg-7 col-md-12 col-sm-12 clm-video-page-fixed-right-text">
+                    <h2 class="mulish-font">About Vaxholm Church</h2>
+                    <p class="mulish text-muted">Vaxholm Church, also known as Vaxholm Kyrka, stands as an iconic landmark of Vaxholm, an archipelago city in Stockholm, Sweden. The church, desgined and built in the late 19th century by Carl Fredrik Adelcrantz and Olof Tempelman, represents an architectural blend of the neo-Gothic style with certain distinctive Nordic features. Its elegant exterior, marked by a striking red brick façade and a towering spire, is a sight to behold against the backdrop of the serene archipelago. Inside, you can find a peaceful sanctuary adorned with wooden pews, stunning stained glass windows, and beautiful religious artwork. Notably, the church's organ, a remarkable piece of craftsmanship, produces enchanting melodies that add to the spiritual atmosphere. Vaxholm Church, in addition to being a place of worship, plays a crucial role in the community's social and cultural activities, hosting Christmas concerts, exhibitions, and community events throughout the year. Its historic charm and significance make it an indispensable part of Vaxholm's cultural landscape.
+                        <br>
+                        <br>
+                        For more information: <a href="https://www.destinationvaxholm.se/en/105249/Vaxholm-Church/#!#info" target="_blank">https://www.destinationvaxholm.se/en/105249/Vaxholm-Church/#!#info</a></p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-12 ">
-                <div class="card" style="width: 20rem;">
-                    <img src="blog-page-card-3.png" class="card-img-top" alt="...">
-                    <a href="demo.html"><div class="card-body">
-                        <h5 class="card-text mulish-font bold">
-                            How do we help with SDGs? A guide to what we do and how you can be involved. 
 
-                        </h5>
-                        <div class="buttom-links mulish-font bold">
-                            Author:
-                            Intelgra
-                        </div>
-                    </div></a>
-
-                </div>
             </div>
         </div>
     </div>
@@ -197,34 +155,17 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- footer----------------------------------------- -->
 
     <!-- footer----------------------------------------- -->
     <div class="container-fluid bg-darken">
         <div class="container">
             <footer class="row  py-5 border-top">
                 <div class="col-lg-5 col-sm-12 mb-3 text-white ">
-                    <h1 class="lora-font bolder mb-5">Signup for newsletter</h1>
-                    <p class=" bold text-white mb-4">Lorem ipsum, dolor sit amet consectetur adipisici dolor sit amet,
+                    <h1 class="lora-font mb-5">Signup for newsletter</h1>
+                    <p class="mulish-font bold mb-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisici dolor
+                        sit amet,
                         consectetur ading elit.</p>
-                    <div class="input-group mb-3 mt-5">
+                    <div class="input-group mb-3 d-flex center-align">
 
                         <input type="text" class="form-control border-radius " placeholder="Input Your Email Here"
                             aria-label="Username" aria-describedby="basic-addon1"> <span
@@ -237,7 +178,8 @@
                     </div>
                 </div>
                 <div class=" col-lg-6 col-sm-12">
-                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis omnis voluptates, ipsum nam consequuntur tempore?</p>
+                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis omnis
+                        voluptates, ipsum nam consequuntur tempore?</p>
                     <div class="row">
                         <div class="col-lg-4 col-md-12 mb-3">
                             <ul class="nav flex-column">
@@ -256,23 +198,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-4 col-md-12 mb-3">
-                        
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Features</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Pricing</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                                </li>
-                            </ul>
-                        </div>   <div class="col-lg-4 col-md-12 mb-3">
-                         
+
                             <ul class="nav flex-column">
                                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
                                 </li>
@@ -288,7 +214,24 @@
                                 </li>
                             </ul>
                         </div>
-                </div>
+                        <div class="col-lg-4 col-md-12 mb-3">
+
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Features</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
 
             </footer>

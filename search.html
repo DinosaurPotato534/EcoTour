@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg py-3">
             <div class="container">
 
-                <a class="navbar-brand gold-color" href="#">EcoTour</a>
+                <a class="navbar-brand gold-color" href="index.html">EcoTour</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,16 +36,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cities and Tours</a>
+                            <a class="nav-link" href="./search.html">Cities and Tours</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About </a>
+                            <a class="nav-link" href="./about.html">About </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact </a>
+                            <a class="nav-link" href="./about.html">Contact </a>
                         </li>
                         <li class="nav-item">
 
@@ -63,7 +63,7 @@
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
                         </button>
-                        <button class="btn btn-outline-warning gold-btn" type="submit">Sign Up</button>
+                        <a href="demo.html"><button class="btn btn-outline-warning gold-btn" type="submit">Sign Up</button></a>
                     </form>
                 </div>
             </div>
@@ -90,24 +90,24 @@
                 <div class="col-lg-2 col-md-3 col-sm-12 d-flex">
          
                    <div class="clm-search">
-                    <h6 class="text-muted">Citys</h6>
-                    <select class="form-select" aria-label="Default select example">
-                        
-                       
-                        <option selected >Stockholm</option>
-                        <option value="">Select City</option>
-    <option value="Adilpur">Adilpur</option>
-    <option value="Badin">Badin</option>
-    <option value="Bagarji">Bagarji</option>
-    <option value="Bandhi">Bandhi</option>
-    <option value="Berani">Berani</option>
-    <option value="Bhan">Bhan</option>
-    <option value="Bhiria">Bhiria</option>
-    <option value="Bhit Shah">Bhit Shah</option>
-    <option value="Bozdar Wada">Bozdar Wada</option>
-    <option value="Bulri">Bulri</option>
-   
-                      </select>
+                    <h6 class="text-muted">Cities</h6>
+                    <select class="form-select" aria-label="Cities">
+
+
+                        <option selected value="Stockholm">Stockholm</option>
+                        <option value="N/A">Select City</option>
+                        <option value="Paris">Paris</option>
+                        <option value="London">London</option>
+                        <option value="Rome">Rome</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="New York">New York</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="Prague">Prague</option>
+                        <option value="Budapest">Budapest</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Istanbul">Istanbul</option>
+
+                    </select>
                     </div>
                     
                 </div>
@@ -115,23 +115,24 @@
          
                     <div class="clm-search">
                      <h6 class="text-muted">Districts</h6>
-                     <select class="form-select" aria-label="Default select example">
-                         
-                        
-                         <option selected >Norrmalm</option>
-                         <option value="">Select City</option>
-     <option value="Adilpur">Adilpur</option>
-     <option value="Badin">Badin</option>
-     <option value="Bagarji">Bagarji</option>
-     <option value="Bandhi">Bandhi</option>
-     <option value="Berani">Berani</option>
-     <option value="Bhan">Bhan</option>
-     <option value="Bhiria">Bhiria</option>
-     <option value="Bhit Shah">Bhit Shah</option>
-     <option value="Bozdar Wada">Bozdar Wada</option>
-     <option value="Bulri">Bulri</option>
-    
-                       </select>
+                     <select class="form-select" aria-label="Districts">
+
+
+                        <option selected value="Norrmalm">Norrmalm</option>
+                        <option value="N/A">Select District</option>
+                        <option value="Älvsjö">Älvsjö</option>
+                        <option value="Bromma">Bromma</option>
+                        <option value="Enskede-Årsta-Vantör">
+                            Enskede-Årsta-Vantör</option>
+                        <option value="Farsta">Farsta</option>
+                        <option value="Hägersten-Liljeholmen">Hägersten-Liljeholmen</option>
+                        <option value="Hässelby-Vällingby">Hässelby-Vällingby</option>
+                        <option value="Kungsholmen">Kungsholmen</option>
+                        <option value="Östermalm">Östermalm</option>
+                        <option value="Rinkeby-Kista">Rinkeby-Kista</option>
+                        <option value="Södermalm">Södermalm</option>
+
+                    </select>
                      </div>
                      
                  </div>
@@ -139,23 +140,16 @@
          
                     <div class="clm-search">
                      <h6 class="text-muted">Tour Type</h6>
-                     <select class="form-select" aria-label="Default select example">
-                         
-                        
-                         <option selected >Include All</option>
-                         <option value="">Select City</option>
-     <option value="Adilpur">Adilpur</option>
-     <option value="Badin">Badin</option>
-     <option value="Bagarji">Bagarji</option>
-     <option value="Bandhi">Bandhi</option>
-     <option value="Berani">Berani</option>
-     <option value="Bhan">Bhan</option>
-     <option value="Bhiria">Bhiria</option>
-     <option value="Bhit Shah">Bhit Shah</option>
-     <option value="Bozdar Wada">Bozdar Wada</option>
-     <option value="Bulri">Bulri</option>
-    
-                       </select>
+                     <select class="form-select" aria-label="Tour Type">
+
+
+                        <option selected>History</option>
+                        <option value="N/A">Select Tour Type</option>
+                        <option value="Art">Art</option>
+                        <option value="Food">Food</option>
+                        <option value="Nature">Nature</option>
+
+                    </select>
                      </div>
                      
                  </div>
@@ -163,24 +157,23 @@
          
                     <div class="clm-search">
                      <h6 class="text-muted">sort by</h6>
-                     <select class="form-select" aria-label="Default select example">
-                         
-                        
-                         <option selected > All</option>
-                         <option value="">Select City</option>
-     <option value="Adilpur">Adilpur</option>
-     <option value="Badin">Badin</option>
-     <option value="Bagarji">Bagarji</option>
-     <option value="Bandhi">Bandhi</option>
-     <option value="Berani">Berani</option>
-     <option value="Bhan">Bhan</option>
-     <option value="Bhiria">Bhiria</option>
-     <option value="Bhit Shah">Bhit Shah</option>
-     <option value="Bozdar Wada">Bozdar Wada</option>
-     <option value="Bulri">Bulri</option>
-    
-                       </select>
-                     </div>
+                     <select class="form-select" aria-label="Cities">
+
+
+                        <option selected value="Stockholm">Stockholm</option>
+                        <option value="N/A">Select City</option>
+                        <option value="Paris">Paris</option>
+                        <option value="London">London</option>
+                        <option value="Rome">Rome</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="New York">New York</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="Prague">Prague</option>
+                        <option value="Budapest">Budapest</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Istanbul">Istanbul</option>
+
+                    </select>
                      
                  </div>
             </div>
@@ -192,7 +185,7 @@
 
     <div class="container mt-10" >
         <div class="row d-flex justify-content-between my-5 mx-3 srch-page-sugestion-mbl">
-            <h1 class="mulish">About</h1>
+            <h1 class="mulish">Results</h1>
 <div class="d-flex justify-content-center srch-page-sugestion-mbl">
 <a href="" class="btn-outline-warning-link mx-1 "><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#9586A8" class="bi bi-bicycle mx-1" viewBox="0 0 16 16">
     <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"/>
@@ -234,7 +227,7 @@
                             From cheap eats to organic options
                         </p>
                         <div class="btn-box-flex-caruosal-card">
-         <button class="golden-btn mt-2 ">Select</button>
+         <a href="demo.html"><button class="golden-btn mt-2 ">Select</button></a>
         </div>
                         </div>
                    
@@ -244,7 +237,7 @@
                 <div class="flex-card">
                     <img src="srch-page-card-clm-2.png" alt="" class="img-responsive flex-card-img">
                     <div class="carousal-card-sm-container ml-2">
-                        <p class="mulish-font bold">Food Tour
+                        <p class="mulish-font bold">Midsummers
                         </p>
                         <div class="flex text-muted"><svg xmlns="http://www.w3.org/2000/svg"
                                 width="15" height="15" fill="GOLD" class="bi bi-star-fill"
@@ -255,10 +248,10 @@
                             4.8 &nbsp;
                         </div>
                         <p class="text-muted mt-2">
-                            From cheap eats to organic options
+                            An experience of local festival
                         </p>
                         <div class="btn-box-flex-caruosal-card">
-         <button class="golden-btn mt-2 ">Select</button>
+         <a href="demo.html"><button class="golden-btn mt-2 ">Select</button></a>
         </div>
                         </div>
                    
@@ -266,9 +259,9 @@
             </div>
             <div class="col-lg-12 col-md-12 mb-3 d-flex">
                 <div class="flex-card">
-                    <img src="srch-page-card-clm-3.png" alt="" class="img-responsive flex-card-img">
+                    <img src="snus-search.jpg" alt="" class="img-responsive flex-card-img">
                     <div class="carousal-card-sm-container ml-2">
-                        <p class="mulish-font bold">Food Tour
+                        <p class="mulish-font bold">History of Snus
                         </p>
                         <div class="flex text-muted"><svg xmlns="http://www.w3.org/2000/svg"
                                 width="15" height="15" fill="GOLD" class="bi bi-star-fill"
@@ -279,10 +272,10 @@
                             4.8 &nbsp;
                         </div>
                         <p class="text-muted mt-2">
-                            From cheap eats to organic options
+                            A tale of local industrial history
                         </p>
                         <div class="btn-box-flex-caruosal-card">
-         <button class="golden-btn mt-2 ">Select</button>
+         <a href="demo.html"><button class="golden-btn mt-2 ">Select</button></a>
         </div>
                         </div>
                    
@@ -293,7 +286,7 @@
                 <div class="flex-card">
                     <img src="srch-page-card-clm-4.png" alt="" class="img-responsive flex-card-img">
                     <div class="carousal-card-sm-container ml-2">
-                        <p class="mulish-font bold">Food Tour
+                        <p class="mulish-font bold">An Afternoon Stroll at Vaxholm
                         </p>
                         <div class="flex text-muted"><svg xmlns="http://www.w3.org/2000/svg"
                                 width="15" height="15" fill="GOLD" class="bi bi-star-fill"
@@ -307,7 +300,7 @@
                             From cheap eats to organic options
                         </p>
                         <div class="btn-box-flex-caruosal-card">
-         <button class="golden-btn mt-2 ">Select</button>
+         <a href="tour-detail.html"><button class="golden-btn mt-2 ">Select</button></a>
         </div>
                         </div>
                    
@@ -324,7 +317,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 border-radius-map mt-4">
                 <div class="map-responsive">
                     <iframe
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Sweden&maptype=satellite"
                         width="100%" height="700px" frameborder="0" style="border:0" allowfullscreen id="map"></iframe>
                 </div>
 
@@ -341,86 +334,87 @@
 
 
 
-    <!-- footer----------------------------------------- -->
-    <div class="container-fluid bg-darken">
-        <div class="container">
-            <footer class="row  py-5 border-top">
-                <div class="col-lg-5 col-sm-12 mb-3 text-white ">
-                    <h1 class="lora-font mb-5">Signup for newzletter</h1>
-                    <p class="mulish-font bold mb-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisici dolor sit amet,
-                        consectetur ading elit.</p>
-                    <div class="input-group mb-3 d-flex center-align">
-
-                        <input type="text" class="form-control border-radius " placeholder="Input Your Email Here"
-                            aria-label="Username" aria-describedby="basic-addon1"> <span
-                            class="input-group-text warning  border-0 ml-1" id="basic-addon1"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
-                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                            </svg></span>
-                    </div>
-                </div>
-                <div class=" col-lg-6 col-sm-12">
-                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis omnis
-                        voluptates, ipsum nam consequuntur tempore?</p>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-3">
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Features</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Pricing</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-12 mb-3">
-
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Features</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Pricing</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-12 mb-3">
-
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Features</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Pricing</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                                </li>
-                            </ul>
+        <!-- footer----------------------------------------- -->
+        <div class="container-fluid bg-darken">
+            <div class="container">
+                <footer class="row py-5 border-top">
+                    <div class="col-lg-5 col-sm-12 mb-3 text-white ">
+                        <h1 class="lora-font mb-5">Signup for newsletter</h1>
+                        <p class="mulish-font bold mb-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisici dolor
+                            sit amet,
+                            consectetur ading elit.</p>
+                        <div class="input-group mb-3 d-flex center-align">
+    
+                            <input type="text" class="form-control border-radius " placeholder="Input Your Email Here"
+                                aria-label="Username" aria-describedby="basic-addon1"> <span
+                                class="input-group-text warning  border-0 ml-1" id="basic-addon1"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg></span>
                         </div>
                     </div>
-
-
-            </footer>
+                    <div class=" col-lg-6 col-sm-12">
+                        <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis omnis
+                            voluptates, ipsum nam consequuntur tempore?</p>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 mb-3">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#"
+                                            class="nav-link p-0 text-body-secondary">Features</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#"
+                                            class="nav-link p-0 text-body-secondary">Pricing</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-12 mb-3">
+    
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#"
+                                            class="nav-link p-0 text-body-secondary">Features</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#"
+                                            class="nav-link p-0 text-body-secondary">Pricing</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-12 mb-3">
+    
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#"
+                                            class="nav-link p-0 text-body-secondary">Features</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#"
+                                            class="nav-link p-0 text-body-secondary">Pricing</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+    
+                </footer>
+            </div>
         </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

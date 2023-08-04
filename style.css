@@ -572,6 +572,34 @@ margin-left: 10px;    padding-top: 16px;
 
 }
 
+/* Styles for mobile devices (up to 768px) */
+.customSize {
+    width: 100%;
+    height: 700px;
+  }
+  
+  /* Styles for desktop devices (min-width 769px) */
+  @media (min-width: 769px) {
+    .customSize {
+        width: 200%;
+        height: 700px;
+    }
+  }
+
+  .customSize2 {
+    width: 100%;
+    height: 700px;
+  }
+  
+  /* Styles for desktop devices (min-width 769px) */
+  @media (min-width: 769px) {
+    .customSize2 {
+        width: 680px;
+        height: 480px;
+    }
+  }
+  
+
 /* tourpage */
 /* tourpage */
 /* tourpage */
