@@ -205,7 +205,7 @@ input[type=search]:focus {
 
 
 .bg1-container {
-    background: url(bg1.jpeg)no-repeat;
+    background: url("../images/bg1.jpeg")no-repeat;
 
 
 
@@ -242,7 +242,7 @@ input[type=search]:focus {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: url(blog-bg.png)no-repeat center center/cover;
+    background: url("../images/blog-bg.png")no-repeat center center/cover;
     background-color: rgba(0, 0, 0, 0.11);
     background-blend-mode: darken;
 }
@@ -498,7 +498,7 @@ font-weight: 800;
 
     padding: 10px 10px;
     margin: 5px 0; border: 1px solid #fff;
-    background: url("down-arrow-5-32.png")
+    background: url("../images/down-arrow-5-32.png")
  ;
     background-color: #fff;  background-size: 16px;
   background-position: calc(100% - 20px) 17px;
@@ -1030,7 +1030,7 @@ margin-bottom: 100px;
     .home-flex{
         display: flex;
         flex-direction: column-reverse;
-        background:url(home-1-img.png);
+        background:url(../images/home-1-img.png);
         background-color: #00000058;
 background-blend-mode: darken;
     }
