@@ -599,7 +599,9 @@ margin-left: 10px;    padding-top: 16px;
     }
   }
   
-
+  .no-scroll {
+  overflow-x : hidden 
+  }
 /* tourpage */
 /* tourpage */
 /* tourpage */
