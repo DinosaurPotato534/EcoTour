@@ -1,2 +1,2 @@
-# EcoTour
+# SustainaTrek
 (To be written later)
